@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<style type="text/css">
+{% include "styles.css" %}
+</style>
+</head>
+
+<body>
+<p>Hi,</p>
+<p>{{ text_message }}</p>
+<table>
+  <tr>
+    {% for cell in header %}
+      <td><b>{{ cell }}</b></td>
+    {% endfor %}
+  </tr>
+  {% for row in data %}
+    <tr>
+      {% for cell in row %}
+        <td>{{ cell }}</td>
+      {% endfor %}
+    </tr>
+  {% endfor %}
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+table { border-collapse: collapse; width: 70%; }
+
+th, td { text-align: left; padding: 4px; }
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+table, th, td { border: 1px solid black;}
